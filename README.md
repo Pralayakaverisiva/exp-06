@@ -1,4 +1,6 @@
 # Ex.06 Book Front Cover Page Design
+## Date:
+
 ## AIM:
 To design a book front cover page using HTML and CSS.
 
@@ -23,130 +25,122 @@ Validate the HTML code.
 Publish the website in the given URL.
 
 ## PROGRAM:
-```html
-<!DOCTYPE html>
-<html lang="en">
+## cover.html
+    <!DOCTYPE html>
+    <html lang="en">
     <head>
-         <meta name="viewport" 
-         content="width=device-width, initial-scale=1.0">
-         <style>
-
-        .bookpage{
-            width: 400px;
-            height: 600px;
-            color:white;
-            margin-left: auto;
-            margin-right: auto;
-            padding: 20px;
-            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-            background-image: url(/static/images/back.jpg);
-            background-size: cover;
-        }
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Book Cover</title>
+        <style>
             
-
-        .insight{
-            color: black;
-
-        }
-
-        
-        .hrstyle{
-            width:100px;
-        }
-        .author{
-        
-            display: inline;
-            position: relative;
-            color: white;
-            top:190px;
+    *{
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh; 
+        margin: 0; 
+        background-color:whitesmoke;
+    }
+    
+    .container
+    {
+        display: flex;
+        height: 98vh;
+        width: 30%;    
+        justify-content: center;
+        align-items: center;
+        border-color: black;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        overflow: hidden;
+        background-image: url(nature.jpg);
+        background-repeat: no-repeat;
+    }
+    
+    .head{
+        position: absolute;
+        color:purple;
+        top: 150px;
+        font-size: 18px;
+    }
+    
+    .word1{
+        position: absolute;
+        color: violet;
+        top: 15px;
+        left: 560px;
+    }
+    
+    .word2{
+        position: absolute;
+        top: 60px;
+        left: 540px;
+    }
+    
+    .word{
+        position:absolute;
+        top: 550px;
+        left: 560px;
+        color:white;
+    }
+    
+    .word3{
+        position: absolute;
+        top: 610px;
+        left: 540px;
+    }
+    
+    .author{
+        position: absolute;
+        top: 630px;
+        left: 560px;
+        color:brown;
+    }
+    
+    .pic img{
+        height: 100px;
+        width: 90px;
+        position: absolute;
+        top: 560px;
+        left: 870px;
+    }
             
-            font-family:Georgia;
-            font-size: medium;
-        }
-        .booktitle{
-            font-family: 'Courier New', Courier, monospace;
-            font-size: larger;
-            text-align: center;
-            position: relative;
-            top: 30px;
-        
-        }
-        .id {
-            width:400px;
-            position: relative;
-            top:180px;
-            
-        }
-        .pub{
-            font-size: medium;
-            position: relative;
-            top:155px;
-            left:330px;
-        }
-        .ed{
-            color: black;
-            font-size: medium;
-            font-family: Verdana;
-            position:relative;
-            top:85px;
-
-        }
-        .subtitle{
-            font-family:Tahoma;
-            font-size: large;
-            position: relative;
-            top:40px;
-        }
-        .mypic{
-            position: relative;
-            top: 135px;
-            left: 260px;
-            width: 100px;
-            height: 100px;
-            background-size: cover;
-        }
+    
         </style>
-        <title>Book Cover Page</title>
+       
     </head>
     <body>
-        <div class="bookpage">
-            <div class="insight">
-                SEC INSIGHT
+        <div class="container">
+            <div class="head">
+                <h1>IKIGAI</h1>
+                <p>The Japanese Secret To a Long and Happy Life</p>
             </div>
-            <div class="hrstyle">
-                <hr style="color: yellow;">
+            <div class="word1">
+                <h3>EXPERT INSIGHT</h3>
             </div>
-            <div class="booktitle">
-                <h1>Web Development: The Complete Reference</h1></div>
-            <div class="subtitle">
-                with Django and Bootstrap Insights
-            </div>
-            <div class="mypic">
-                <img src="/static/images/my.jpg" width="130" height="145" alt="">
-            </div>
-            <div class="id">
-                <hr style="color: orange;">
+            <hr class="word2" width="210px">
+            <div class="word">
+                <h3>FIRST EDITION</h3>
             </div>
             <div class="author">
-               <p><b>MUKESH R</b></p>
+                <h3>KATHIR V.S</h3>
             </div>
-            <div class="pub">
-                SEC
-            </div>
-            <div class="ed">
-                <b>Extended Edition</b>
+            <hr class="word3" width="170px">
+            <div class="pic">
+                <img src="IMG_3540.jpg">
             </div>
         </div>
     </body>
-</html>
-```
+    </html>
 
 
 ## OUTPUT:
-![OutPut](out3.png)
+<img width="833" alt="Screenshot 2023-11-15 at 10 59 35 PM" src="https://github.com/Shrishxok/FWAD6/assets/120294863/1759ddcd-4e65-49fc-8e0d-8ac1d1081172">
+<img width="832" alt="Screenshot 2023-11-15 at 10 59 14 PM" src="https://github.com/Shrishxok/FWAD6/assets/120294863/7a1f2740-19d0-44f0-858a-a5db9c0bddce">
 
-## HTML VALIDATOR:
-![HTMLValidator](./valid.png)
 
 ## RESULT:
 The program for designing book front cover page using HTML and CSS is completed successfully.
